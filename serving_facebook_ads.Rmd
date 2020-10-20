@@ -48,7 +48,7 @@ palette4 <- c("#981FAC","#FF006A","#FE4C35","#FE9900")
 palette2 <- c("#981FAC","#FF006A")
 
 
-advertising <- read.csv("~/Clients/MUSA_Teaching_and_Admin/MUSA_507_2020/people_ML/advertising_clean.csv")
+advertising <- read.csv("~/GitHub/MUSA_508_wk8/advertising_clean.csv")
 
 ```
 
