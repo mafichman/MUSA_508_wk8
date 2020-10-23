@@ -72,7 +72,7 @@ advertising %>%
       geom_bar(position = "dodge", stat = "summary", fun.y = "mean") + 
       facet_wrap(~Variable, scales = "free") +
       scale_fill_manual(values = palette2) +
-      labs(x="Churn", y="Value", 
+      labs(x="Click", y="Value", 
            title = "Feature associations with the likelihood of click",
            subtitle = "(continous outcomes)") +
       theme(legend.position = "none")
@@ -215,7 +215,7 @@ ggplot(testProbs, aes(x = Probs, fill = as.factor(Outcome))) +
   geom_density() +
   facet_grid(Outcome ~ .) +
   scale_fill_manual(values = palette2) +
-  labs(x = "Churn", y = "Density of probabilities",
+  labs(x = "Click", y = "Density of probabilities",
        title = "Distribution of predicted probabilities by observed outcome") +
   theme(strip.text.x = element_text(size = 18),
         legend.position = "none")
