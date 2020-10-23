@@ -152,11 +152,13 @@ We run our model with the dependent variable `clickNumeric` and we use most of o
 
 **Practice explaining the values of the coefficients:**
 
-Use the `exp()` function to exponentiate a coefficeint and produce an 'odds ratio'. A fixed effect coefficient which exponentiates to a value of, say `0.25` would be explained as follows:
+Use the `exp()` function to exponentiate a coefficeint and produce an 'odds ratio' relative to a value of 1. A fixed effect coefficient which exponentiates to a value of, say `0.25` would be explained as follows:
 
-"All else equal, a person having 'characteristic X' reduces the likelihood of clicking by 25%."
+"All else equal, a person having 'characteristic X' reduces the likelihood of clicking by 75%."
 
 For continuous variables the coefficients are interpreted as having a unit increase in the independent variable increase the likelihood of clicking by some percentage.
+
+For more on the coefficients associated with logistic regression, [read here]("https://rpubs.com/OmaymaS/182726").
 
 ```{r run_model}
 

@@ -380,9 +380,10 @@ advertisingTest  &lt;- advertising[-trainIndex,]</code></pre>
 <div id="discussion-2" class="section level2">
 <h2>Discussion 2</h2>
 <p><strong>Practice explaining the values of the coefficients:</strong></p>
-<p>Use the <code>exp()</code> function to exponentiate a coefficeint and produce an 'odds ratio'. A fixed effect coefficient which exponentiates to a value of, say <code>0.25</code> would be explained as follows:</p>
-<p>&quot;All else equal, a person having 'characteristic X' reduces the likelihood of clicking by 25%.&quot;</p>
+<p>Use the <code>exp()</code> function to exponentiate a coefficeint and produce an 'odds ratio' relative to a value of 1. A fixed effect coefficient which exponentiates to a value of, say <code>0.25</code> would be explained as follows:</p>
+<p>&quot;All else equal, a person having 'characteristic X' reduces the likelihood of clicking by 75%.&quot;</p>
 <p>For continuous variables the coefficients are interpreted as having a unit increase in the independent variable increase the likelihood of clicking by some percentage.</p>
+<p>For more on the coefficients associated with logistic regression, <a href="%22https://rpubs.com/OmaymaS/182726%22">read here</a>.</p>
 <pre class="r"><code>advertisingModel &lt;- glm(clickNumeric ~ .,
                   data=advertisingTrain %&gt;% 
                     dplyr::select(-Country, -Timestamp, -click),
